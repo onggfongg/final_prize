@@ -1,0 +1,45 @@
+{
+  "name": "prizeproj",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.13.2",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "firebase": "^5.11.1",
+    "nodemailer": "^6.1.1",
+    "react": "^16.8.6",
+    "react-bootstrap-dropdown-menu": "^1.1.15",
+    "react-dom": "^16.8.6",
+    "react-dropdown-select": "^2.2.3",
+    "react-facebook-login": "^4.1.1",
+    "react-redux": "^6.0.1",
+    "react-redux-firebase": "^3.0.0-alpha.11",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.8",
+    "react-sidebar": "^3.0.2",
+    "reactstrap": "^7.1.0",
+    "redux": "^4.0.1",
+    "redux-firestore": "^0.7.3",
+    "redux-thunk": "^2.3.0",
+    "semantic-ui-css": "^2.4.1",
+    "styled-components": "^4.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "proxy":"http://localhost:3001",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {}
+}

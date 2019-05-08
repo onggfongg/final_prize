@@ -1,0 +1,49 @@
+#showcase {
+  background: url("../assets/login.jpg") no-repeat center center/cover;
+  height: 700px;
+}
+
+.text-primary1 {
+  color: #050404;
+}
+
+#showcase .showcase-content {
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#showcase .showcase-content p1 {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: rgb(92, 91, 91);
+  color: #fff;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}

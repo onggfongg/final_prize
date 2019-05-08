@@ -1,0 +1,46 @@
+.text-primary1 {
+  color: #050404;
+}
+
+#showcase .showcase-content {
+  color: #fff;
+  text-align: center;
+  padding-top: 180px;
+}
+
+#showcase .showcase-content view {
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 12px;
+  color: #fff;
+  background: #333;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  margin-left: 33%;
+}
+
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: rgb(92, 91, 91);
+  color: #fff;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}

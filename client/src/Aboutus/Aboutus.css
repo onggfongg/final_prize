@@ -1,0 +1,337 @@
+#showcase-aboutus {
+  background: url("../assets/bg1.jpg") no-repeat center center/cover;
+  height: 500px;
+}
+
+.text-primary1-aboutus {
+  color: #da884e;
+}
+
+.lead-aboutus {
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+}
+
+#showcase-aboutus .showcase-content-aboutus {
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#showcase-aboutus .showcase-content-aboutus h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+
+#showcase-about-us .showcase-content-aboutus p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+
+/* Pic2 */
+#showcase2-aboutus {
+  background: url("../assets/aboutusbg1.jpg") no-repeat center center/cover;
+  height: 500px;
+}
+
+.text-primary2-aboutus {
+  color: #da884e;
+}
+
+.lead2-aboutus {
+  font-size: 21px;
+  font-family: "Roboto", sans-serif;
+}
+
+#showcase2-aboutus .showcase-content2-aboutus {
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#showcase2-aboutus .showcase-content2-aboutus h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+
+#showcase2-aboutus .showcase-content2-aboutus p1 {
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 1.7em;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+
+/* pic3 */
+#showcase3-aboutus {
+  background: url("../assets/aboutusbg2.jpg") no-repeat center center/cover;
+  height: 500px;
+}
+
+.text-primary3-aboutus {
+  color: #da884e;
+}
+
+.lead3-aboutus {
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+}
+
+#showcase3-aboutus .showcase-content3-aboutus {
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#showcase3-aboutus .showcase-content3-aboutus h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+
+#showcase3-aboutus .showcase-content3-aboutus p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+
+/* Home Info */
+#contact-info-home {
+  height: 300px;
+}
+
+#contact-info-home .info-content1 {
+  float: right;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 30px 30px;
+  overflow: hidden;
+}
+
+#contact-info-home .info-content2 {
+  float: right;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  padding: 0px 30px;
+  overflow: hidden;
+}
+
+#contact-info-home .info-content1 p-home {
+  padding-bottom: 10px;
+
+  font-size: 16px;
+}
+#contact-info-home .info-content1 p1-home {
+  padding-bottom: 0px;
+
+  font-size: 16px;
+}
+
+#contact-info-home .info-content3 p2-home {
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+#contact-info-home .info-content3 h3 {
+  padding-bottom: 0px;
+}
+
+.text-primary2 {
+  color: #da884e;
+}
+
+.text-primary3 {
+  /* padding-top: 10px; */
+  color: #da884e;
+}
+
+@media only screen and (max-width: 600px) {
+  #showcase-aboutus {
+    background: url("../assets/bg1.jpg") no-repeat center center/cover;
+    height: 350px;
+  }
+
+  .text-primary1-aboutus {
+    color: #da884e;
+  }
+
+  .lead-aboutus {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  #showcase-aboutus .showcase-content-aboutus {
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  #showcase-aboutus .showcase-content-aboutus h1 {
+    font-size: 40px;
+    line-height: 1.2em;
+    padding-bottom: 10px;
+  }
+
+  #showcase-about-us .showcase-content-aboutus p {
+    padding-bottom: 17px;
+    line-height: 1.7em;
+  }
+
+  .bg-dark {
+    background: #333;
+    color: #fff;
+  }
+
+  .bg-light {
+    background: #f4f4f4;
+    color: #333;
+  }
+
+  .bg-primary {
+    background: #f7c08a;
+    color: #333;
+  }
+
+  /* Pic2 */
+  #showcase2-aboutus {
+    background: url("../assets/aboutusbg1.jpg") no-repeat center center/cover;
+    height: 400px;
+  }
+
+  .text-primary2-aboutus {
+    color: #da884e;
+  }
+
+  .lead2-aboutus {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  #showcase2-aboutus .showcase-content2-aboutus {
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  #showcase2-aboutus .showcase-content2-aboutus h1 {
+    font-size: 40px;
+    line-height: 1.2em;
+    padding-bottom: 20px;
+  }
+
+  #showcase2-aboutus .showcase-content2-aboutus p1 {
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 1.7em;
+  }
+
+  .bg-dark {
+    background: #333;
+    color: #fff;
+  }
+
+  .bg-light {
+    background: #f4f4f4;
+    color: #333;
+  }
+
+  .bg-primary {
+    background: #f7c08a;
+    color: #333;
+  }
+
+  /* pic3 */
+  #showcase3-aboutus {
+    background: url("../assets/aboutusbg2.jpg") no-repeat center center/cover;
+    height: 350px;
+  }
+
+  .text-primary3-aboutus {
+    color: #da884e;
+  }
+
+  .lead3-aboutus {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  #showcase3-aboutus .showcase-content3-aboutus {
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  #showcase3-aboutus .showcase-content3-aboutus h1 {
+    font-size: 40px;
+    line-height: 1.2em;
+    padding-bottom: 20px;
+  }
+
+  #showcase3-aboutus .showcase-content3-aboutus p {
+    padding-bottom: 20px;
+    line-height: 1.7em;
+  }
+
+  .bg-dark {
+    background: #333;
+    color: #fff;
+  }
+
+  .bg-light {
+    background: #f4f4f4;
+    color: #333;
+  }
+
+  .bg-primary {
+    background: #f7c08a;
+    color: #333;
+  }
+}
