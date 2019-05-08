@@ -29,7 +29,7 @@ class Profile extends Component {
     const keys = history === {} ? [] : Object.keys(history);
     return (
       <div id="showcase1">
-        <div className="container" style={{ border: "1px solid black" }}>
+        <div className="container border-pc">
           <div className="content">
             <h4>User Profile</h4>
           </div>

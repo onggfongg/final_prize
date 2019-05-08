@@ -22,14 +22,14 @@
 }
 
 .profile-container {
-  color: red;
-  background-color: yellow;
+  color: white;
+  background-color: gray;
   height: 145px;
   width: 145px;
   min-width: 145px;
   border-radius: 145px;
   border: 1px solid black;
-  font-size: 32px;
+  font-size: 50px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -41,9 +41,16 @@
   color: white;
 }
 
+.border-pc {
+  border: none;
+}
+
 @media only screen and (min-width: 768px) {
   .container-content-profile {
     padding-left: 200px;
     padding-right: 200px;
+  }
+  .border-pc {
+    border: 1px solid black;
   }
 }
