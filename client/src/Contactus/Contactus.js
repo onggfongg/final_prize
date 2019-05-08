@@ -18,22 +18,22 @@ class Contactus extends Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  async handleSubmit(e) {
+  handleSubmit = async e => {
     e.preventDefault(e);
-    const { name, email, message } = this.state;
-    console.log("hello");
-    await axios.post("/api/form", {
-      name,
+    const { email, message } = this.state;
+    const res = await axios.post("/api/form", {
       email,
       message
     });
-  }
+    if (res.data) {
+      this.props.history.push("/finishedContactus");
+    }
+  };
 
   render() {
     return (
@@ -74,11 +74,11 @@ class Contactus extends Component {
                   onChange={this.handleChange}
                 />
               </div>
-              <Link to="/finishedContactus">
-                <button type="submit" className="btn">
-                  Submit
-                </button>
-              </Link>
+              {/* <Link to="/finishedContactus"> */}
+              <button type="submit" className="btn">
+                Submit
+              </button>
+              {/* </Link> */}
             </div>
           </section>
         </Form>

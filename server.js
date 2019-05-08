@@ -8,12 +8,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "client/build")));
 
-app.post("/api/form", (req, res) => {
+app.post("/api/form", (req, response) => {
   const mailOptions = {
     from: "" + req.body.email,
     to: "thitaree.sasa@gmail.com",
     subject: "ข้อความอัตโนมัติ",
-    html: "<p>" + req.body.message + "</p>" + "from" + req.body.email
+    html: "<p>" + req.body.message + "</p>" + " from " + req.body.email
   };
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -23,7 +23,7 @@ app.post("/api/form", (req, res) => {
     if (error) {
       console.log(error);
     } else {
-      res.status(200).json({ msg: "Email sent successfully" });
+      response.status(200).json({ msg: "success" });
     }
   });
 });
