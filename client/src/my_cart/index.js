@@ -1,27 +1,3 @@
-// import React from "react";
-// import { connect } from "react-redux";
-// // import "./index.css";
-
-// class MyCart extends React.Component {
-//   render() {
-//     const { cart } = this.props;
-//     return (
-//       <div>
-//         {cart.size.map(product => (
-//           <h1>{product.size}</h1>
-//         ))}
-//       </div>
-//     );
-//   }
-
-// const mapStateToProps = state => {
-//   return {
-//     cart: state.cart.cart
-//   };
-// };
-
-// export default connect(mapStateToProps)(MyCart);
-
 import React from "react";
 import { connect } from "react-redux";
 import { deleteItemFromCartByIndex } from "../redux/cart_ducks";
@@ -31,7 +7,20 @@ import firebase from "firebase";
 import { compose } from "redux";
 import { Redirect } from "react-router-dom";
 import { withFirebase, isLoaded, isEmpty } from "react-redux-firebase";
+import { Link } from "react-router-dom";
 
+export const calculateTotalPrice = cart => {
+  let totalPrice = 0;
+  cart.forEach(({ value }) => {
+    let quantity = value.product.quantity;
+    console.log(quantity);
+    let price = value.product.price;
+    totalPrice += quantity * price;
+  });
+  return {
+    totalPriceWithoutTax: parseInt(totalPrice)
+  };
+};
 class MyCart extends React.Component {
   constructor(props) {
     super(props);
@@ -49,6 +38,7 @@ class MyCart extends React.Component {
   }
   render() {
     const { cart, auth } = this.props;
+    const { totalPriceWithoutTax } = calculateTotalPrice(cart);
     console.log(cart);
     if (!auth.uid) return <Redirect to="/login" />;
     //const ownerCart = cart.filter(({ key }) => key === auth.uid);
@@ -99,9 +89,16 @@ class MyCart extends React.Component {
           <div className="total-bg">
             <h3 className="row" style={{ fontWeight: 400 }}>
               <span className="col-6">total price:</span>
-              <span className="col-6 text-right">$</span>
+              <span className="col-6 text-right">
+                {totalPriceWithoutTax} Bath
+              </span>
             </h3>
           </div>
+        </div>
+        <div className="text-center">
+          <Link to="/checkout">
+            <button className="btn">Checkout</button>
+          </Link>
         </div>
       </div>
     );
