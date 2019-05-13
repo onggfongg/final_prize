@@ -42,8 +42,7 @@ class Details extends Component {
 
   render() {
     const { product, localCart, auth } = this.state;
-    console.log(localCart, "localCart");
-    console.log(auth)
+    console.log(product, "this is product");
     //if (!auth.uid) return <Redirect to="/login" />;
     if (!product.title) return <p> Loading </p>;
     const { title, img, description, info, caution, size } = product;
@@ -113,18 +112,18 @@ class Details extends Component {
   }
 }
 
-const matchDispatchToProps = (dispatch) => {
+const matchDispatchToProps = dispatch => {
   return {
-    addToCart: (product) => dispatch(addToCart(product)) 
-  }
-}
+    addToCart: product => dispatch(addToCart(product))
+  };
+};
 
-const mapStateToProps = (state) => {
-    console.log(state)
-    return{
-      auth: state.firebase.auth
-    }
-  }
+const mapStateToProps = state => {
+  console.log(state);
+  return {
+    auth: state.firebase.auth
+  };
+};
 
 export default connect(
   mapStateToProps,

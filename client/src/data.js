@@ -1,8 +1,10 @@
+import zipbag from "./assets/img/zipbag1.png";
+import fishbag from "./assets/img/fishbag.jpg";
 export const storeProducts = [
   {
     id: 1,
     title: "Zip Bag",
-    img: "img/zipbag1.png",
+    img: zipbag,
     info:
       "Zipper bags are used from food to gifts, these bags are the best way to hold products in place, keep air out, and seal out the elements.",
     inCart: true,
@@ -11,8 +13,7 @@ export const storeProducts = [
     size: ["4x6cm", "6x8cm", "9x13 cm", "15x23 cm", "23x35 cm"],
     detailProduct: {
       title: "Zip Bag",
-      img: "img/zipbag1.png",
-
+      img: zipbag,
       size: [
         { size: "4x6 cm", price: 140 },
         { size: "6x8 cm", price: 160 },
@@ -188,7 +189,7 @@ export const storeProducts = [
   {
     id: 8,
     title: "Farm Bag",
-    img: "img/fishbag.jpg",
+    img: fishbag,
     info:
       "Used for packing water with nursery fish or shrimp in farm industry. The bag provide inner and outer bag for good protecting.",
     inCart: false,

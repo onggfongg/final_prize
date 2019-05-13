@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { deleteItemFromCartByIndex } from "../redux/cart_ducks";
+import { checkout } from "../redux/cart_ducks";
 import "./index.css";
 import { firebaseConnect } from "react-redux-firebase";
 import firebase from "firebase";
@@ -11,7 +12,14 @@ import { Link } from "react-router-dom";
 
 export const calculateTotalPrice = cart => {
   let totalPrice = 0;
+  console.log(cart, "cart");
+  if (cart.length < 1) {
+    return {
+      totalPriceWithoutTax: 0
+    };
+  }
   cart.forEach(({ value }) => {
+    console.log(value, "value");
     let quantity = value.product.quantity;
     console.log(quantity);
     let price = value.product.price;
@@ -38,8 +46,8 @@ class MyCart extends React.Component {
   }
   render() {
     const { cart, auth } = this.props;
+    console.log(cart, "cart");
     const { totalPriceWithoutTax } = calculateTotalPrice(cart);
-    console.log(cart);
     if (!auth.uid) return <Redirect to="/login" />;
     //const ownerCart = cart.filter(({ key }) => key === auth.uid);
     // if(cart.length<1){
@@ -90,14 +98,16 @@ class MyCart extends React.Component {
             <h3 className="row" style={{ fontWeight: 400 }}>
               <span className="col-6">total price:</span>
               <span className="col-6 text-right">
-                {totalPriceWithoutTax} Bath
+                {totalPriceWithoutTax} THB
               </span>
             </h3>
           </div>
         </div>
         <div className="text-center">
           <Link to="/checkout">
-            <button className="btn">Checkout</button>
+            <button className="btn" onClick={() => this.props.checkout()}>
+              Checkout
+            </button>
           </Link>
         </div>
       </div>
@@ -107,14 +117,8 @@ class MyCart extends React.Component {
 //}
 
 const mapStateToProps = state => {
-  console.log(state);
-  console.log(state.firebase.ordered.receipt);
-  //const cartAuth = state.firebase.auth.uid;
-  //console.log(cartAuth);
-  // if(state.firestore.ordered.Users){
   if (state.firebase.ordered.receipt) {
     return {
-      // cart: state.firestore.ordered.Users,
       cart: state.firebase.ordered.receipt,
       auth: state.firebase.auth
     };
@@ -129,7 +133,7 @@ const mapStateToProps = state => {
 export default compose(
   connect(
     mapStateToProps,
-    { deleteItemFromCartByIndex }
+    { deleteItemFromCartByIndex, checkout }
   ),
   firebaseConnect(["receipt"])
 )(MyCart);
