@@ -1,5 +1,11 @@
 import zipbag from "./assets/img/zipbag1.png";
 import fishbag from "./assets/img/fishbag.jpg";
+import Garbagebag from "./assets/img/Garbagebag.png";
+import HDbag from "./assets/img/HDbag.png";
+import Icebag from "./assets/img/Icebag.png";
+import LLbag from "./assets/img/LLbag.png";
+import PPbag from "./assets/img/PPbag.jpg";
+import Tshirtbag from "./assets/img/Tshirtbag.png";
 export const storeProducts = [
   {
     id: 1,
@@ -32,7 +38,7 @@ export const storeProducts = [
   {
     id: 2,
     title: "T-shirt Bag",
-    img: "img/Tshirtbag.png",
+    img: Tshirtbag,
     info:
       "It is made of high density plastic bag. HD bag can be used in hot or cold food, and can support a lot of weight.",
     inCart: false,
@@ -58,7 +64,7 @@ export const storeProducts = [
   {
     id: 3,
     title: "PP Bag",
-    img: "img/PPbag.jpg",
+    img: PPbag,
 
     info:
       "PP bag properties is transparency, sticky and hard. It can resist to hot food and suitable for packing and presenting the product detail such as food or cookies.",
@@ -87,7 +93,7 @@ export const storeProducts = [
   {
     id: 4,
     title: "LL Bag",
-    img: "img/LLbag.png",
+    img: LLbag,
     info:
       "LL bag properties are transparency and more flexible than PP bag. It's suitable for cold food or drink and can store in the refridgerator without break.",
     inCart: false,
@@ -114,7 +120,7 @@ export const storeProducts = [
   {
     id: 5,
     title: "Ice Bag",
-    img: "img/Icebag.png",
+    img: Icebag,
     info:
       "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
     inCart: false,
@@ -136,7 +142,7 @@ export const storeProducts = [
   {
     id: 6,
     title: "Hiden Bag",
-    img: "img/HDbag.png",
+    img: HDbag,
 
     info:
       "It is made of high density plastic bag. HD bag can be used in covering big thing or a huge amount of vegetables, and can support a lot of weight too.",
@@ -163,7 +169,7 @@ export const storeProducts = [
   {
     id: 7,
     title: "Garbage Bag",
-    img: "img/Garbagebag.png",
+    img: Garbagebag,
     info:
       "It is made of high density plastic bag. HD bag can be used in covering big thing or a huge amount of vegetables, and can support a lot of weight too.",
     inCart: false,
